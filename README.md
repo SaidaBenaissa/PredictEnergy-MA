@@ -23,29 +23,3 @@ La prévision de la demande énergétique est donc essentielle pour :
 
 - **Réduire les pertes et les coûts énergétiques.**
 
-## 🧩 Architecture globale du proje
-
-+--------------------+
-|  Collecte Données  | <-- ONEE, OpenWeather, Simulation
-+--------------------+
-          ↓
-+--------------------+
-|  Préparation ETL   | <-- Nettoyage, jointures, features
-+--------------------+
-          ↓
-+--------------------+
-|  Stockage Big Data | <-- Parquet, HDFS/S3, Spark jobs
-+--------------------+
-          ↓
-+--------------------+
-|  Modélisation ML   | <-- Prophet / LSTM
-+--------------------+
-          ↓
-+--------------------+
-|  Dashboard / API   | <-- Streamlit, Power BI, FastAPI
-+--------------------+
-
-          ↓
-+--------------------+
-|  Dashboard / API   | <-- Streamlit, Power BI, FastAPI
-+--------------------+
