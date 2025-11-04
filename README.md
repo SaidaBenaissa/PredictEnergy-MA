@@ -1,25 +1,19 @@
-# ⚡ PredictEnergy-MA Prévision de la consommation d’électricité au Maroc à l’aide du Big Data et de l’IA
+# PredictEnergy-MA
+## Prévision de la consommation d’électricité au Maroc à l’aide du Big Data et de l’IA
+## 📘 À propos du projet
 
-## 🧠 Objectif du projet
+PredictEnergy-MA est un projet universitaire de Data Engineering et Data Science visant à prévoir la consommation d’électricité au Maroc en exploitant des données ouvertes (World Bank, Climate Data) et les technologies du Big Data et de l’Intelligence Artificielle.
 
-Ce projet a pour objectif de prévoir la consommation d’électricité dans différentes villes marocaines (Casablanca, Rabat, Fès, Marrakech…) en utilisant des données massives (Big Data), des modèles d’apprentissage automatique (LSTM, Prophet) et des outils cloud (S3 / BigQuery / Spark).
+Le projet s’articule autour d’une architecture de pipeline moderne :
 
-## Le système permettra de :
+Collecte → données d’énergie et de température (1990–2023).
 
-- **Analyser les tendances de consommation énergétique ;** 
+Nettoyage & Préparation → pipeline raw → bronze → silver → gold avec stockage CSV et Parquet.
 
-- **Identifier les pics de demande par heure ou par jour ;** 
+Big Data → traitements distribués avec PySpark pour nettoyage, typage et agrégation annuelle.
 
-- **Aider à la planification énergétique nationale et aux politiques durables.** 
+IA & Modélisation → modèles de prévision (Prophet, LSTM) pour anticiper la demande électrique.
 
-## 🗺️ Contexte
+Cloud & Visualisation → visualisation des résultats via Streamlit ou Power BI.
 
-Le Maroc investit fortement dans les énergies renouvelables (centrale Noor à Ouarzazate, parcs éoliens de Tarfaya…).
-La prévision de la demande énergétique est donc essentielle pour :
-
-- **Améliorer la stabilité du réseau ;**
-
-- **Mieux intégrer les énergies solaires et éoliennes ;**
-
-- **Réduire les pertes et les coûts énergétiques.**
-
+Ce projet met en évidence le lien entre énergie, climat et développement durable, tout en illustrant la puissance du Big Data appliqué à un cas réel marocain.
