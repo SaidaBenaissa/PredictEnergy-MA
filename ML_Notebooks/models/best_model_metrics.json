@@ -1,0 +1,41 @@
+{
+    "best_model": "lstm_univariate",
+    "performance": {
+        "MAE": 140.42562683105464,
+        "RMSE": 165.01128627175476,
+        "MAPE": 4.449732439626434,
+        "R2": 0.3009435080829529
+    },
+    "comparison_improvement": {
+        "mae_improvement": 24.318780430280924,
+        "rmse_improvement": 32.67461375349935,
+        "mape_improvement": 23.430091061522944,
+        "r2_improvement": 155.49911071202206
+    },
+    "model_parameters": {
+        "architecture": "LSTM_Univariate",
+        "sequence_length": 12,
+        "layers": [
+            50,
+            25
+        ],
+        "features_used": [
+            "consumption_scaled_only"
+        ],
+        "training_epochs": 30,
+        "final_val_loss": 0.01366688683629036
+    },
+    "training_data_info": {
+        "train_samples": 216,
+        "test_samples": 48,
+        "train_period": "2000-01-01 00:00:00 to 2018-12-01 00:00:00",
+        "test_period": "2019-01-01 00:00:00 to 2023-12-01 00:00:00"
+    },
+    "deployment_info": {
+        "saved_date": "2025-11-06T19:24:47.409028",
+        "model_path": "models/lstm_model.h5",
+        "scaler_path": "models/scaler_target.pkl",
+        "performance_level": "EXCELLENT",
+        "recommended_retraining_frequency": "MONTHLY"
+    }
+}

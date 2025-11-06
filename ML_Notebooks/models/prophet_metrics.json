@@ -1,0 +1,24 @@
+{
+    "best_model": "with_regressors",
+    "metrics_basic": {
+        "MAE": 250.66857264169403,
+        "RMSE": 342.0967700132811,
+        "MAPE": NaN,
+        "R\u00b2": -1.4336399497416035
+    },
+    "metrics_regressors": {
+        "MAE": 165.02490391033527,
+        "RMSE": 224.14925094632602,
+        "MAPE": NaN,
+        "R\u00b2": -0.04479951505726376
+    },
+    "best_metrics": {
+        "MAE": 165.02490391033527,
+        "RMSE": 224.14925094632602,
+        "MAPE": NaN,
+        "R\u00b2": -0.04479951505726376
+    },
+    "regressors_used": [
+        "renewables_kWh"
+    ]
+}

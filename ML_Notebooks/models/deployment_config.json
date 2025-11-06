@@ -1,0 +1,52 @@
+{
+    "model_type": "LSTM",
+    "model_path": "models/lstm_model.h5",
+    "scaler_path": "models/scaler_target.pkl",
+    "sequence_length": 12,
+    "input_shape": [
+        12,
+        1
+    ],
+    "required_columns": [
+        "consumption_scaled"
+    ],
+    "prediction_frequency": "MONTHLY",
+    "retraining_schedule": "EVERY_6_MONTHS",
+    "performance_thresholds": {
+        "MAE_alert": 200,
+        "MAPE_alert": 10,
+        "R2_alert": -1.0
+    },
+    "model_architecture": {
+        "layers": [
+            {
+                "type": "LSTM",
+                "units": 50,
+                "return_sequences": true
+            },
+            {
+                "type": "Dropout",
+                "rate": 0.2
+            },
+            {
+                "type": "LSTM",
+                "units": 25,
+                "return_sequences": false
+            },
+            {
+                "type": "Dropout",
+                "rate": 0.2
+            },
+            {
+                "type": "Dense",
+                "units": 16,
+                "activation": "relu"
+            },
+            {
+                "type": "Dense",
+                "units": 1,
+                "activation": "linear"
+            }
+        ]
+    }
+}
